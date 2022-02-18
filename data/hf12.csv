@@ -1,0 +1,21 @@
+RGI_Reg,Name,A,V,V_err,SLE,SLE_err
+1,Alaska,89901,20402,1501,50.7,3.7
+2,Western Canada and US,14615,1025,84,2.5,0.2
+3,Arctic Canada North,105139,34399,4699,85.4,11.7
+4,Arctic Canada South,40893,9814,1115,24.4,2.8
+5,Greenland periphery,87765,19042,2655,47.3,6.6
+6,Iceland,11055,4441,370,11,0.9
+7,Svalbard,33932,9685,922,24,2.3
+8,Scandinavia,2846,256,19,0.6,0
+9,Russian Arctic,51665,16839,2205,41.8,5.5
+10,North Asia,2816,140,15,0.3,0
+11,Central Europe,2060,117,10,0.3,0
+12,Caucasus and Middle east,1121,61,6,0.2,0
+13,Central Asia,64448,5026,503,12.5,1.2
+14,South Asia West,33961,3241,287,8,0.7
+15,South Asia East ,21699,1312,119,3.3,0.3
+16,Low Latitudes,4074,144,16,0.4,0
+17,Southern Andes,32521,6674,507,16.6,1.3
+18,New Zealand,1160,70,5,0.2,0
+19,Antarctic,133173,37517,8402,93.1,20.9
+Total,,734856,170214,20688,422.6,57.1
