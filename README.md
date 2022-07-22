@@ -35,9 +35,9 @@ Details of the columns:
 ### Corrected regional volumes
 
 In `millan_table_corrected.csv`, we revise Table 1 in the paper on three aspects:
-- The values indicated in both the F19 and M22 publications are rounded for readability, which makes certain numbers in small regions too coarse for comparison and exact percentages. Here the numbers are directly extracted from the original data files of each respective study.
-- Region 19 (Antarctic and Subantarctic) is now considered as a whole, like in F19
-- The regional volumes are corrected for missing data coverage in the M22 product. For this correction, we use F19 to estimate the fraction of the volume missing in M22 and adjust accordingly (the underlying assumption is that F19 is a good estimate of the missing volume fraction, while the F19 total volumes are irrelevant).
+1. The values indicated in both the F19 and M22 publications are rounded for readability, which makes certain numbers in small regions too coarse for comparison and exact percentages. Here the numbers are directly extracted from the original data files of each respective study.
+2. Region 19 (Antarctic and Subantarctic) is now considered as a whole, like in F19
+3. The regional volumes are corrected for missing data coverage in the M22 product. For this correction, we use F19 to estimate the fraction of the volume missing in M22 and adjust accordingly (the underlying assumption is that F19 is a good estimate of the missing volume fraction, while the F19 total volumes are irrelevant).
 
 See the code in [millan_regional_volume_scaling.ipynb](millan_regional_volume_scaling.ipynb) for more details.
 
