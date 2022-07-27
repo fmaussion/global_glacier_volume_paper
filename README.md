@@ -28,7 +28,8 @@ Details of the columns:
 - `millan_area_km2`: the area covered by the dataset in this glacier as computed from the original M22 dataset 
 - `millan_perc_cov`: the percentage of the glacier covered by the original M22 dataset 
 - `f19_vol_km3`: the volume of the glacier as obtained from the original F19 dataset 
-- `millan_vol_adj`: the volume of the glacier as computed from the original M22 dataset, but adjusted for regional undercatch (pixels non-attributable to a specific glacier). This is NOT a correction for the missing area, but necessary to match the regional volume estimates. The difference to  `millan_vol_km3` is small (< 5% in most cases)
+- `millan_vol_adj`: the volume of the glacier as computed from the original M22 dataset, but adjusted for regional undercatch (pixels non-attributable to a specific glacier). This is not a correction for the missing area, but necessary to match the regional volume estimates. The difference to  `millan_vol_km3` is small (< 5% in most cases)
+- `vas_millan_vol`: the volume as computed by volume area scaling, regionally fitted to all glaciers with > 90% coverage
 
 ### Corrected regional volumes
 
@@ -46,9 +47,18 @@ Details of the columns:
 - `M22 volume uncorrected (km³)`: total volume of the region provided by the M22 dataset (without correction). These numbers should be identical to M22 Table 1 (they are not exact in some cases, but close enough - we assume rounding or small reporting errors in the paper).
 - `F19 volume (km³)`: regional volume in the F19 dataset.
 - `M22-F19 volume difference uncorrected (%)`: the difference in volume as reported in Table 1 of M22, but computed by us by dividing `M22 volume uncorrected (km³)` by `F19 volume (km³)`. The numbers should be close enough.
-- `M22-F19 volume difference on subset (%)`: the difference in volume, but computed over a subset of F19 and M22 where both dataset are available with good data coverage (> 90%).
+- `M22 volume on subset (km³)`: the total M22 volume on the subset of glaciers with M22 data coverage > 90% (i.e. good quality of both datasets)
+- `F19 volume on subset (km³)`: the total F19 volume on the same subset
+- `M22-F19 volume difference on subset (%)`: the difference in volume computed over the same subset 
 - `M22 volume corrected method 1 (km³)`: the corrected regional volumes, computed with Method 1 (linear scaling of the missing volume by the missing area)
 - `M22 volume corrected method 2 (km³)`: the corrected regional volumes, computed with Method 2 (using F19 to estimate the fraction of the volume not covered by M22)
+- `VAS parameter c`: the regional parameter `c` in the volume area scaling `V` = `c A^gamma`. Fitted over all glaciers in the subset.
+- `VAS parameter gamma`: the regional parameter `gamma` in the volume area scaling `V` = `c A^gamma`. Fitted over all glaciers in the subset
+- `M22 volume corrected method 3 (km³)`: the corrected regional volumes, computed with Method 3 (using volume-area scaling to estimate the fraction of the volume not covered by M22)
+- `M22-F19 volume difference method 1 (%)`: the new regional differences (in %) computed with Method 1
+- `M22-F19 volume difference method 2 (%)`: the new regional differences (in %) computed with Method 2
+- `M22-F19 volume difference method 3 (%)`: the new regional differences (in %) computed with Method 3
+
 
 ## Licence 
 
