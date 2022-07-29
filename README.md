@@ -47,7 +47,7 @@ Details of the columns:
 - `M22 volume uncorrected (km³)`: total volume of the region provided by the M22 dataset (without correction). These numbers should be identical to M22 Table 1 (they are not exact in some cases, but close enough - we assume rounding or small reporting errors in the paper).
 - `F19 volume (km³)`: regional volume in the F19 dataset.
 - `M22-F19 volume difference uncorrected (%)`: the difference in volume as reported in Table 1 of M22, but computed by us by dividing `M22 volume uncorrected (km³)` by `F19 volume (km³)`. The numbers should be close enough.
-- `M22 volume on subset (km³)`: the total M22 volume on the subset of glaciers with M22 data coverage > 90% (i.e. good quality of both datasets)
+- `M22 volume on subset (km³)`: the total M22 volume on the subset of glaciers with M22 data coverage > 95% (i.e. good quality of both datasets)
 - `F19 volume on subset (km³)`: the total F19 volume on the same subset
 - `M22-F19 volume difference on subset (%)`: the difference in volume computed over the same subset 
 - `M22 volume corrected method 1 (km³)`: the corrected regional volumes, computed with Method 1 (linear scaling of the missing volume by the missing area)
