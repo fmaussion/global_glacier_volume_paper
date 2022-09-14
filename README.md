@@ -8,7 +8,7 @@ While the study is a tremendous improvement in methodology as well as fantastic 
 
 Used in the paper:
 
-![img](plot_global_and_reg_log_alpha.png)
+![img](plot_global_and_reg_log.png)
 
 ![img](plot_maps_bright_new.png)
 
@@ -50,15 +50,12 @@ Details of the columns:
 - `M22 volume on subset (km³)`: the total M22 volume on the subset of glaciers with M22 data coverage > 95% (i.e. good quality of both datasets)
 - `F19 volume on subset (km³)`: the total F19 volume on the same subset
 - `M22-F19 volume difference on subset (%)`: the difference in volume computed over the same subset 
-- `M22 volume corrected method 1 (km³)`: the corrected regional volumes, computed with Method 1 (linear scaling of the missing volume by the missing area)
-- `M22 volume corrected method 2 (km³)`: the corrected regional volumes, computed with Method 2 (using F19 to estimate the fraction of the volume not covered by M22)
 - `VAS parameter c`: the regional parameter `c` in the volume area scaling `V` = `c A^gamma`. Fitted over all glaciers in the subset.
 - `VAS parameter gamma`: the regional parameter `gamma` in the volume area scaling `V` = `c A^gamma`. Fitted over all glaciers in the subset
-- `M22 volume corrected method 3 (km³)`: the corrected regional volumes, computed with Method 3 (using volume-area scaling to estimate the fraction of the volume not covered by M22)
+- `M22 volume corrected method 1 (km³)`:  the corrected regional volumes, computed with Method 1 (using volume-area scaling to estimate the fraction of the volume not covered by M22)
+- `M22 volume corrected method 2 (km³)`: the corrected regional volumes, computed with Method 2 (using F19 to estimate the fraction of the volume not covered by M22)
 - `M22-F19 volume difference method 1 (%)`: the new regional differences (in %) computed with Method 1
 - `M22-F19 volume difference method 2 (%)`: the new regional differences (in %) computed with Method 2
-- `M22-F19 volume difference method 3 (%)`: the new regional differences (in %) computed with Method 3
-
 
 ## Licence 
 
