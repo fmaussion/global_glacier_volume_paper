@@ -22,7 +22,7 @@ Used in the paper:
 
 ## Corrected regional and global volumes
 
-In the `tables_regional_correction` folder, you will find three CSV files.
+In the [tables_regional_correction](tables_regional_correction) folder, you will find three CSV files.
 
 ### Glacier per glacier volume 
 
@@ -41,7 +41,7 @@ Details of the columns:
 
 ### Corrected regional volumes
 
-**The tables in [tables_regional_correction](tables_regional_correction) are equivalent to the additional data table in the J. Glaciology paper - a few columns have been renamed and reorganized for the paper.**
+**The tables in [tables_regional_correction](tables_regional_correction) are equivalent to the additional data table of the J. Glaciology paper - a few columns have been renamed and reorganized for the paper.**
 
 In `millan_table_corrected.csv`, we revise Table 1 in the paper on three aspects:
 1. The values indicated in both the F19 and M22 publications are rounded for readability, which makes certain numbers in small regions too coarse for comparison and exact percentages. Here the numbers are directly extracted from the original data files of each respective study.
