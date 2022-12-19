@@ -1,6 +1,6 @@
 # Global glacier volume figures & tables
 
-Code & Data for *Hock R., Maussion, R., Marzeion, B. and Nowicki, S., 2022: What is the global glacier ice volume outside the ice sheets?, Journal of Glaciology, accepted.*
+Code & Data for *Hock R., Maussion, F., Marzeion, B. and Nowicki, S., 2022: What is the global glacier ice volume outside the ice sheets?, Journal of Glaciology, accepted.*
 
 ## Licence 
 
@@ -8,7 +8,7 @@ It's all coded in python 3. You'll need pandas, geopandas, matplotlib, and seabo
 
 The code is released under BSD3. The regional volume data is not from us but from the respective studies: **if you use the data in the `data` folder, please refer to the original studies.**
 
-**If you use the plots in the `figures` folder or the data in the `tables_regional_correction` folder, please refer to** *Hock R., Maussion, R., Marzeion, B. and Nowicki, S., 2022: What is the global glacier ice volume outside the ice sheets?, Journal of Glaciology, accepted.*
+**If you use the plots in the `figures` folder or the data in the `tables_regional_correction` folder, please refer to** *Hock R., Maussion, F., Marzeion, B. and Nowicki, S., 2022: What is the global glacier ice volume outside the ice sheets?, Journal of Glaciology, accepted.*
 
 ## Code
 
