@@ -1,4 +1,4 @@
-# Global glacier volume figures & tables
+# Global glacier volume Code & Data
 
 Code & Data for *Hock R., Maussion, F., Marzeion, B. and Nowicki, S., 2022: What is the global glacier ice volume outside the ice sheets?, Journal of Glaciology, accepted.*
 
