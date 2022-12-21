@@ -54,7 +54,7 @@ See the code in [millan_regional_volume_scaling.ipynb](code/millan_regional_volu
 
 Details of the columns:
 
-0. `index`: Region number of the Randolf Glacier Inventory (RGI, version 6.0). M22 added some regions together - we do the same for consistency.
+0. `index`: Region number of the Randolf Glacier Inventory (RGI, version 6.0). M22 added some regions together - we do the same for consistency
 1. `RGI area (km²)`: total glacier area in the region as provided by the RGI 6.0 dataset
 2. `M22 area uncorrected (km²)`: regional glacier area covered by ice volume estimates in M22; recalculated in this study based on the original gridded dataset provided by M22 (Note that in some cases the area differs somewhat from those reported in M22, Table 1)
 3. `M22 coverage (%)`: ratio of of glacier area covered by M22 (recalculated in this study, column 2) to RGI area (column 1)
@@ -63,10 +63,10 @@ Details of the columns:
 6. `M22-F19 volume difference uncorrected (%)`: (column 4 - column 5) / (column 5) * 100
 7. `M22 volume on subset (km³)`: "subset" refers to a subset of glaciers in this region with M22 data coverage > 95%. The volume is recalculated as in column 4, but for this subset.
 8. `F19 volume on subset (km³)`: glacier volume from F19 on the same subset as column 7. Columns 7 and 8 allow a "true" comparison, comparing the two datasets over a domain where both dataset have a good coverage.
-9. `M22-F19 volume difference on subset (%)`: : (column 7 - column 8) / (column 8) * 100. Fair comparison of the two datasets.
-10. `VAS parameter c`: the regional parameter `c` in the volume area scaling `V` = `c A^gamma`. Fitted on M22 data processed by us over all glaciers in the subset.
-11. `VAS parameter gamma`: the regional parameter `gamma` in the volume area scaling `V` = `c A^gamma`. Fitted on M22 data processed by us over all glaciers in the subset.
-12. `M22 volume corrected method 1 (km³)`: regional glacier volume by M22 (column 7) upscaled to the total RGI area using method 1 (V-A scaling) and the parameters in columns 10 and 11.  See Hock and others for details.
-13. `M22 volume corrected method 2 (km³)`: regional glacier volume (column 7) upscaled to the RGI area using method 2 (based on F19 data). See Hock and others for details.
-14. `M22-F19 volume difference method 1 (%)`: (column 12 - column 5) / (column 5) * 100. 
-15. `M22-F19 volume difference method 2 (%)`: (column 13 - column 5) / (column 5) * 100. By design, this should be the same as column 9 and is used for verification.
+9. `M22-F19 volume difference on subset (%)`: (column 7 - column 8) / (column 8) * 100. Fair comparison of the two datasets
+10. `VAS parameter c`: the regional parameter `c` in the volume area scaling `V` = `c A^gamma`. Fitted on M22 data processed by us over all glaciers in the subset
+11. `VAS parameter gamma`: the regional parameter `gamma` in the volume area scaling `V` = `c A^gamma`. Fitted on M22 data processed by us over all glaciers in the subset
+12. `M22 volume corrected method 1 (km³)`: regional glacier volume by M22 (column 7) upscaled to the total RGI area using method 1 (V-A scaling) and the parameters in columns 10 and 11.  See Hock and others for details
+13. `M22 volume corrected method 2 (km³)`: regional glacier volume (column 7) upscaled to the RGI area using method 2 (based on F19 data). See Hock and others for details
+14. `M22-F19 volume difference method 1 (%)`: (column 12 - column 5) / (column 5) * 100
+15. `M22-F19 volume difference method 2 (%)`: (column 13 - column 5) / (column 5) * 100. By design, this should be the same as column 9 and is used for verification
