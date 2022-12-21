@@ -45,6 +45,7 @@ Details of the columns:
 ### Corrected regional volumes
 
 In `millan_table_corrected.csv`, we revise the regional tables in the original M22 and F19 studies for three aspects:
+
 1. The values indicated in both the F19 and M22 publications are rounded for readability, which makes certain numbers in small regions too coarse for comparison and exact percentages. Here the numbers are directly extracted from the original data files of each respective study.
 2. Region 19 (Antarctic and Subantarctic) is now computed for all glaciers in RGI 6.0 for M22 to be comparable to F19.
 3. The regional volumes are corrected for missing data coverage in the M22 thickness product. For this correction, we use two different approaches (see Hock and others for methods).
@@ -52,7 +53,8 @@ In `millan_table_corrected.csv`, we revise the regional tables in the original M
 See the code in [millan_regional_volume_scaling.ipynb](code/millan_regional_volume_scaling.ipynb) for implementation details.
 
 Details of the columns:
-0. `index`: Region number of the Randolf Glacier Inventory (RGI, version 6.0). M22 added the results of some regions together - we do the same for consistency.
+
+0. `index`: Region number of the Randolf Glacier Inventory (RGI, version 6.0). M22 added some regions together - we do the same for consistency.
 1. `RGI area (km²)`: total glacier area in the region as provided by the RGI 6.0 dataset
 2. `M22 area uncorrected (km²)`: regional glacier area covered by ice volume estimates in M22; recalculated in this study based on the original gridded dataset provided by M22 (Note that in some cases the area differs somewhat from those reported in M22, Table 1)
 3. `M22 coverage (%)`: ratio of of glacier area covered by M22 (recalculated in this study, column 2) to RGI area (column 1)
