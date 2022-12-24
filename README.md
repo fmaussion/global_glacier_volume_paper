@@ -68,3 +68,4 @@ Details of the columns:
 15. `M22 volume corrected method 2 (km³)`: regional glacier volume (column 9) upscaled to the RGI area using method 2 (based on F19 data). See Hock et al., (2023) for details.
 16. `M22-F19 volume difference method 1 (%)`: (column 14 - column 6) / (column 6) * 100.
 17. `M22-F19 volume difference method 2 (%)`: (column 15 - column 6) / (column 6) * 100. By design, this should be the same as column 11 and is used for verification.
+18. `M22-F19 volume difference as reported (%)`: same as columns 16 and 17 but as reported in M22, Table 1.
