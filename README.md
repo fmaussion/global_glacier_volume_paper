@@ -2,7 +2,9 @@
 
 Code & Data for *Hock R., Maussion, F., Marzeion, B. and Nowicki, S., 2023: What is the global glacier ice volume outside the ice sheets?, Journal of Glaciology, accepted.*
 
-Release: v1.0 (2022-12-29)
+Release: v1.X (unreleased)
+
+Zenodo link: 
 
 ## Licence 
 
