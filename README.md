@@ -2,6 +2,8 @@
 
 Code & Data for *Hock R., Maussion, F., Marzeion, B. and Nowicki, S., 2023: What is the global glacier ice volume outside the ice sheets?, Journal of Glaciology, accepted.*
 
+Release: v1.0 (2022-12-29)
+
 ## Licence 
 
 The code is released under BSD3. It's all coded in python 3. You'll need to install pandas, geopandas, rioxarray, xarray, matplotlib, and seaborn to run the notebooks.
