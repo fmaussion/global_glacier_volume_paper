@@ -2,9 +2,7 @@
 
 Code & Data for *Hock R., Maussion, F., Marzeion, B. and Nowicki, S., 2023: What is the global glacier ice volume outside the ice sheets?, Journal of Glaciology, accepted.*
 
-Release: v1.X (unreleased)
-
-Zenodo link: 
+Release: v1.1 (2022-12-29)
 
 ## Licence 
 
@@ -85,9 +83,16 @@ Note that for RGI Region 19 we use the values as reported by M22 without any cor
 Files used as input to our calculations or for the figures. 
 
 - `.csv` files: table data from the original studies. If you use these data, please refer to the original studies: Millan et al., 2022; Farinotti et al., 2019; Radić et al., 2014; Grinsted, 2013; Huss and Farinotti, 2012; Marzeion et al., 2012; Radić and Hock, 2010; Raper and Braithwaite 2005; Dyurgerov and Meier, 2005; Ohmura, 2004; Meier and Bahr, 1996.
-- `f19_icevol_pergla.hdf`: glacier per glacier volume from the F19 dataset
-- `rgi6_stats.h5`: glacier attributes from the RGI6.0 dataset (RGI Consortium, 2017)
-- `shapes`: shapefiles used for Figure 1 (maps of Greenland and Antarctica). See [fig1_maps.ipynb](code/fig1_maps.ipynb) for references and links.
+- other files need to be downloaded and are indicated in the respective code notebooks.
+
+## Changelog
+
+- v1.0 (2022-12-29): initial release
+- v1.1 (2022-12-29): removed large input files to reduce repository size (they can be downloaded)
+
+## DOI
+
+Permanent Zenodo link: https://doi.org/10.5281/zenodo.7492034
 
 ## References
 
