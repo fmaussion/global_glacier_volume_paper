@@ -14,7 +14,7 @@ Some of the data given in the the [data](data) folder are taken from previous pu
 
 ## Note on the publication of a correction by Millan et al. in December 2022
 
-On December 12, 2022, Millan et al. [published a correction](https://www.nature.com/articles/s41561-022-01106-x) to the original paper. **Our code repository takes this correction into account, and so do our figures and tables**. The correction addressed inconsistencies between the data provided by Millan et al. and the numbers reported in their paper (a problem that we pointed out to the authors). As a result, our recalculations of regional volumes are now strictly equivalent to the numbers reported in the Millan et al. paper (with the exception of region 03, see below).
+On December 12, 2022, Millan et al. [published a correction](https://www.nature.com/articles/s41561-022-01106-x) to their original paper. **Our code repository takes this correction into account, and so do our figures and tables**. The correction addressed inconsistencies between the data provided by Millan et al. and the numbers reported in their paper (a problem that we pointed out to the authors). As a result, our recalculations of regional volumes are now identical to the numbers reported in the Millan et al. paper (with the exception of region 03, see below).
 
 ## Code
 
@@ -40,15 +40,15 @@ Details of the columns:
 - `rgi_id`: unique glacier identifier from the Randolf Glacier Inventory (RGI, version 6.0)
 - `rgi_area_km2`: area of the glacier as provided by the RGI 6.0. 
 - `millan_vol_km3`: volume of the glacier as computed from the original M22 dataset reprojected and cropped for each glacier (the original dataset does not provide glacier per glacier estimates, only regional files). 
-- `millan_area_km2`: area of the glacier as computed from the original M22 dataset. The differences to RGI6 originate from: (1) the raster representation at 50 m resolution in the M22 data which results in different areas than the vector RGI outlines, (2) map projection differences and (3) incomplete data coverage in the original M22 dataset. Points 1 and 2 lead to small differences and are not cause for concern. Point 3 requires a correction for some regions, which is our main objective here.
-- `millan_perc_cov`: percentage of the glacier area covered by M22 (recalculated in this study: `millan_area_km2`) relative to area in the RGI.
+- `millan_area_km2`: area of the glacier as computed from the original M22 dataset. The differences to RGI6 originate from: (1) the raster representation at 50 m resolution in the M22 data which results in different areas than the vector RGI outlines, (2) map projection differences and (3) incomplete data coverage in the M22 dataset. Points 1 and 2 lead to small differences and are not cause for concern. Point 3 requires a correction for some regions, which is our main objective here.
+- `millan_perc_cov`: percentage of the glacier area covered by the ice thickness dataset in M22 (recalculated in this study: column `millan_area_km2`) relative to area in the RGI.
 - `f19_vol_km3`: volume of the glacier as recalculated from the original F19 dataset.
 - `millan_vol_adj`: volume of the glacier as recalculated from the original M22 dataset, but adjusted for regional undercatch (pixels in the original M22 dataset non-attributable to a specific glacier because of reprojection issues). Since this regional undercatch is not attributable to single glaciers, we compute the ratio of the total regional volume in the original M22 files to the regional sum of individual glaciers (`millan_vol_km3`), yielding regional correction factors of 2.5 ± 1.5% depending on the region. This regional correction factor is applied to all glaciers in a region, ensuring that our regional totals of glacier per glacier volumes are uequivalent to the regional volume reported by M22.
 - `vas_millan_vol`: volume as computed by volume area scaling (Eq. S1 in Hock et al., 2023), with the RGI area as reference. Scaling parameters are computed for each RGI region separately. They are fitted regionally to the glacier per glacier M22 dataset (`millan_vol_adj` column) for all glaciers with >95% area coverage (see Hock et al., 2013 for details and the regional tables below for the parameter values).
 
 ### Corrected regional volumes
 
-[volume_table_corrected.csv](tables_regional_glacier_volume/volume_table_corrected.csv): recalcuated and upscaled regional glacier volume based on M22 compared to original M22 and F19 data, as well as additional data used in the re-calculation. See Hock et al., (2023) Supplementary Material for a full description and the code in [millan_regional_volume_scaling.ipynb](code/millan_regional_volume_scaling.ipynb) for implementation details.
+[volume_table_corrected.csv](tables_regional_glacier_volume/volume_table_corrected.csv): recalcuated and upscaled regional glacier volume based on M22 compared to original M22 and F19 data, as well as additional data used in the re-calculation. See Hock et al. (2023) Supplementary Material for a full description and the code in [millan_regional_volume_scaling.ipynb](code/millan_regional_volume_scaling.ipynb) for implementation details.
 
 [volume_table_corrected_rounded.csv](tables_regional_glacier_volume/volume_table_corrected_rounded.csv): same as [volume_table_corrected.csv](tables_regional_glacier_volume/volume_table_corrected.csv) but rounded for readability.
 
@@ -75,6 +75,15 @@ Details of the columns:
 18. `M22-F19 volume difference as reported (%)`: same as columns 16 and 17 but as reported in M22, Table 1.
 
 Note that for RGI Region 19 we use the values as reported by M22 without any correction. The original M22 dataset does not provide thickness values for much of the glaciated area in this region (they rely on BedMachine v.1; Morlighem et al., 2019). Furthermore, they report a coverage of 100% which makes the regional upscaling obsolete.
+
+## Data folder
+
+Files used as input to our calculations or for the figures. 
+
+- `.csv` files: table data from the original studies. If you use these data, please refer to the original studies: Millan et al., 2022; Farinotti et al., 2019; Radić et al., 2014; Grinsted, 2013; Huss and Farinotti, 2012; Marzeion et al., 2012; Radić and Hock, 2010; Raper and Braithwaite 2005; Dyurgerov and Meier, 2005; Ohmura, 2004; Meier and Bahr, 1996.
+- `f19_icevol_pergla.hdf`: glacier per glacier volume from the F19 dataset
+- `rgi6_stats.h5`: glacier attributes from the RGI6.0 dataset (RGI Consortium, 2017)
+- `shapes`: shapefiles used for Figure 1 (maps of Greenland and Antarctica). See [fig1_maps.ipynb](code/fig1_maps.ipynb) for references and links.
 
 ## References
 
