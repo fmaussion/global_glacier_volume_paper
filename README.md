@@ -16,7 +16,7 @@ Some of the data given in the the [data](data) folder are taken from previous pu
 
 ## Note on the publication of a correction by Millan et al. in December 2022
 
-On December 12, 2022, Millan et al. [published a correction](https://www.nature.com/articles/s41561-022-01106-x) to their original paper. **Our code repository takes this correction into account, and so do our figures and tables**. The correction addressed inconsistencies between the data provided by Millan et al. and the numbers reported in their paper (a problem that we pointed out to the authors). As a result, our recalculations of regional volumes are now identical to the numbers reported in the Millan et al. paper (with the exception of region 03, see below).
+On December 12, 2022, Millan et al. [published a correction](https://www.nature.com/articles/s41561-022-01106-x) to their original paper. **Our code repository takes this correction into account, and so do our figures and tables**. The correction addressed inconsistencies between the data provided by Millan et al. and the numbers reported in their paper. As a result, our recalculations of regional volumes are now identical to the numbers reported in the Millan et al. paper (with the exception of region 03, see below).
 
 ## Code
 
